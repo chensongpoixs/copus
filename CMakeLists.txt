@@ -644,3 +644,5 @@ if(BUILD_TESTING AND NOT BUILD_SHARED_LIBS)
         -DCMAKE_SYSTEM_NAME=${CMAKE_SYSTEM_NAME}
         -P "${PROJECT_SOURCE_DIR}/cmake/RunTest.cmake")
 endif()
+set_property(TARGET  opus 											PROPERTY FOLDER deps/opus)
+ 
